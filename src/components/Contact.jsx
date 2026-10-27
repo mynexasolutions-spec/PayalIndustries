@@ -12,12 +12,8 @@ import {
   Zap,
   BadgeCheck,
 } from "lucide-react";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
-import { business, waHref } from "@/lib/business";
-
-const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
-  business.address
-)}&output=embed`;
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { business, mapEmbedSrc, mapsHref, waHref } from "@/lib/business";
 
 const projectTypes = [
   { value: "UPVC Window", label: "UPVC Window" },
@@ -168,7 +164,7 @@ export default function Contact() {
           <div className="overflow-hidden rounded-3xl shadow-2xl shadow-navy-900/10 ring-1 ring-border">
             <iframe
               title="Payal Industries location"
-              src={mapEmbed}
+              src={mapEmbedSrc}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="h-72 w-full border-0 lg:h-80"
@@ -176,6 +172,14 @@ export default function Contact() {
             <div className="bg-white p-5">
               <p className="text-sm font-bold text-ink">Our Workshop</p>
               <p className="mt-1 text-sm text-muted">{business.address}</p>
+              <a
+                href={mapsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 hover:text-gold"
+              >
+                Open in Google Maps
+              </a>
             </div>
           </div>
 
@@ -206,6 +210,15 @@ export default function Contact() {
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-blue-600"
               >
                 <FaFacebookF size={16} />
+              </a>
+              <a
+                href={business.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-pink-600"
+              >
+                <FaInstagram size={16} />
               </a>
             </div>
           </div>

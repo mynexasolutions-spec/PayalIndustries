@@ -1,10 +1,6 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaWhatsapp, FaFacebookF } from "react-icons/fa6";
-import { business, primaryPhone, telHref, waHref } from "@/lib/business";
-
-const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  business.address
-)}`;
+import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa6";
+import { business, mapsHref, primaryPhone, telHref, waHref } from "@/lib/business";
 
 export default function TopBar() {
   return (
@@ -56,6 +52,15 @@ export default function TopBar() {
             className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-blue-600"
           >
             <FaFacebookF size={12} />
+          </a>
+          <a
+            href={business.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-pink-600"
+          >
+            <FaInstagram size={12} />
           </a>
         </div>
       </div>

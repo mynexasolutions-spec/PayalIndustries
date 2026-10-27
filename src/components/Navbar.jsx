@@ -18,7 +18,7 @@ import {
   Phone,
   X,
 } from "lucide-react";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { business, primaryPhone, telHref, waHref } from "@/lib/business";
 
 const links = [
@@ -233,15 +233,26 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <a
-            href={business.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            className="mt-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-navy-900 ring-1 ring-border transition-colors hover:bg-blue-600 hover:text-white"
-          >
-            <FaFacebookF size={15} />
-          </a>
+          <div className="mt-4 flex items-center gap-2">
+            <a
+              href={business.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-navy-900 ring-1 ring-border transition-colors hover:bg-blue-600 hover:text-white"
+            >
+              <FaFacebookF size={15} />
+            </a>
+            <a
+              href={business.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-navy-900 ring-1 ring-border transition-colors hover:bg-pink-600 hover:text-white"
+            >
+              <FaInstagram size={15} />
+            </a>
+          </div>
         </div>
       </aside>
     </>

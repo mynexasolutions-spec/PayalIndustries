@@ -1,10 +1,6 @@
 import { Phone, Mail, MapPin, ArrowUpRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
-import { business, primaryPhone, telHref, waHref } from "@/lib/business";
-
-const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  business.address
-)}`;
+import { business, mapsHref, primaryPhone, telHref, waHref } from "@/lib/business";
 
 const cardClass =
   "group relative flex flex-col rounded-2xl bg-white p-6 shadow-xl shadow-navy-900/10 ring-1 ring-border transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-navy-900/15";

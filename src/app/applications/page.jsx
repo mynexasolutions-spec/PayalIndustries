@@ -2,16 +2,20 @@ import PageHero from "@/components/PageHero";
 import ApplicationsDetail from "@/components/ApplicationsDetail";
 import ProcessSteps from "@/components/ProcessSteps";
 import CtaBanner from "@/components/CtaBanner";
+import { pageMetadata } from "@/lib/seo";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
-export const metadata = {
-  title: "Applications | Payal Industries",
+export const metadata = pageMetadata({
+  title: "Applications - Homes, Apartments & Commercial Glass Work",
   description:
     "UPVC and aluminium window, door and glass solutions for luxury homes, apartments, commercial buildings and renovation projects across Karnataka.",
-};
+  path: "/applications",
+});
 
 export default function ApplicationsPage() {
   return (
     <>
+      <BreadcrumbJsonLd name="Applications" path="/applications" />
       <PageHero
         crumb="Applications"
         eyebrow="Applications"

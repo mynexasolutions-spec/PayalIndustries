@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, ArrowRight } from "lucide-react";
+import VideoBg from "@/components/VideoBg";
 import { business, primaryPhone, telHref } from "@/lib/business";
 
 export default function CtaBanner() {
@@ -7,6 +8,7 @@ export default function CtaBanner() {
     <section className="bg-white py-16 sm:py-20">
       <div className="container-px mx-auto max-w-7xl">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700 px-6 py-12 text-center shadow-2xl shadow-navy-900/30 sm:px-14 sm:py-16">
+          <VideoBg src="/videos/cta.mp4" className="opacity-30" />
           <div className="relative">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
               Planning a project? <span className="text-gold">Let&apos;s talk.</span>

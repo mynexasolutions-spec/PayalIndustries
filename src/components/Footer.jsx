@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail, ChevronRight, ArrowUp } from "lucide-react";
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { business, telHref, waHref } from "@/lib/business";
 
 const quickLinks = [
@@ -88,6 +88,15 @@ export default function Footer() {
               className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/10 transition-all hover:-translate-y-0.5 hover:bg-blue-600"
             >
               <FaFacebookF size={16} />
+            </a>
+            <a
+              href={business.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white ring-1 ring-white/10 transition-all hover:-translate-y-0.5 hover:bg-pink-600"
+            >
+              <FaInstagram size={17} />
             </a>
           </div>
         </div>

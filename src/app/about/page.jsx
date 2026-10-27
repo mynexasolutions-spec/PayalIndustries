@@ -5,16 +5,20 @@ import AboutServices from "@/components/AboutServices";
 import WorkMosaic from "@/components/WorkMosaic";
 import AboutValues from "@/components/AboutValues";
 import CtaBanner from "@/components/CtaBanner";
+import { pageMetadata } from "@/lib/seo";
+import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
-export const metadata = {
-  title: "About Us | Payal Industries",
+export const metadata = pageMetadata({
+  title: "About Us - UPVC & Aluminium Fabricators in Hubli",
   description:
     "Payal Industries is a trusted UPVC and aluminium fabrication company in Hubli, specializing in windows, profile doors and all types of glass work across Karnataka.",
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbJsonLd name="About Us" path="/about" />
       <PageHero
         crumb="About Us"
         eyebrow="About Payal Industries"

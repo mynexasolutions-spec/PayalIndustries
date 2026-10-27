@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { SlidersVertical, Shrink, LayoutGrid, Grid3x3 } from "lucide-react";
+import VideoBg from "@/components/VideoBg";
 
 const features = [
   {
@@ -36,6 +37,7 @@ export default function FeaturesBanner() {
             sizes="(min-width: 1024px) 57vw, 100vw"
             className="object-cover"
           />
+          <VideoBg src="/videos/features.mp4" />
         </div>
 
         <div className="flex flex-col justify-center px-5 py-12 sm:px-10 lg:px-12 xl:px-16 lg:py-14">

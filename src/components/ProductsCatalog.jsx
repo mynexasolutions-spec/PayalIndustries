@@ -29,7 +29,7 @@ export default function ProductsCatalog() {
           </p>
         </div>
 
-        <div className="sticky top-[72px] z-20 -mx-4 mt-8 bg-surface/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-10 lg:px-10">
+        <div className="sticky top-16 z-20 -mx-4 mt-8 bg-surface/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 lg:-mx-10 lg:px-10">
           <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] sm:flex-wrap sm:justify-center sm:overflow-visible">
             {filters.map((f) => {
               const on = f === active;
